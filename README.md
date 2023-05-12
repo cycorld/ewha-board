@@ -16,5 +16,23 @@ cd board
 ```
 npm install -D prisma
 npm install @prisma/client
+npx prisma init
 ```
 
+prisma 폴더의 schema.prisma 내용 작성
+
+```
+npx prisma generate
+```
+
+위에서 작성한 스키마를 바탕으로 client 생성
+
+```
+npx prisma migrate dev
+```
+
+마이그레이션 파일 생성
+
+```
+npx prisma studio
+```
